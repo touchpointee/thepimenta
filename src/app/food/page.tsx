@@ -27,7 +27,7 @@ export default function FoodPage() {
             <section className="py-24 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col md:flex-row items-center gap-16">
-                        <div className="md:w-1/2 space-y-6">
+                        <div className="w-full md:w-1/2 space-y-6">
                             <span className="text-orange-500 font-bold tracking-widest uppercase">Our Philosophy</span>
                             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
                                 Fresh, Local, & <br /> Authentic
@@ -39,7 +39,7 @@ export default function FoodPage() {
                                 Our menu is a celebration of traditional Kerala cuisine, prepared with love and served with warmth. From the spicy fish curry to the comforting stew, every dish tells a story of our heritage.
                             </p>
                         </div>
-                        <div className="md:w-1/2 grid grid-cols-2 gap-4">
+                        <div className="w-full md:w-1/2 grid grid-cols-2 gap-4">
                             <div className="space-y-4 mt-8">
                                 <div className="relative h-64 rounded-3xl overflow-hidden shadow-lg">
                                     <Image

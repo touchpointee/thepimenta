@@ -69,7 +69,7 @@ export default async function Home() {
             {/* Hero Section */}
             {/* Hero Section */}
             {/* Hero Section */}
-            <section className="relative h-screen flex items-center overflow-hidden">
+            <section className="relative min-h-screen lg:h-screen flex items-center overflow-hidden pt-20 pb-12 lg:py-0">
                 <HeroCarousel images={[
                     content.hero.image || FALLBACK_DATA.hero.image,
                     "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=2070&auto=format&fit=crop",
@@ -77,18 +77,18 @@ export default async function Home() {
                     "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop"
                 ]} />
 
-                <div className="relative z-10 container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="relative z-10 container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
                     <div className="text-white space-y-6">
-                        <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight">
+                        <h1 className="text-4xl md:text-8xl font-bold tracking-tighter leading-tight">
                             Welcome to <br />
                             <span className="text-white">The Pimenta</span>
                         </h1>
-                        <p className="text-2xl md:text-3xl font-light text-white/90">
+                        <p className="text-xl md:text-3xl font-light text-white/90">
                             Adventure and Tranquility
                         </p>
                     </div>
 
-                    <div className="bg-white rounded-3xl p-6 shadow-2xl max-w-md ml-auto w-full">
+                    <div className="bg-white rounded-3xl p-4 md:p-6 shadow-2xl max-w-md ml-auto w-full">
                         <div className="flex items-center gap-2 mb-6 border-b border-gray-100 pb-4">
                             <div className="bg-gray-100 p-2 rounded-lg">
                                 <ChefHat className="w-5 h-5 text-gray-700" />
@@ -142,15 +142,7 @@ export default async function Home() {
                     </div>
                 </div>
 
-                <div className="absolute bottom-10 left-0 right-0 z-10">
-                    <div className="container mx-auto px-4 flex justify-center gap-4">
-                        {['Landscape', 'Excursion', 'Journey', 'Exciting', 'Travel', 'Beach'].map((tag) => (
-                            <span key={tag} className="px-6 py-2 rounded-full border border-white/30 text-white text-sm backdrop-blur-sm hover:bg-white/10 cursor-pointer transition-colors">
-                                {tag.toUpperCase()}
-                            </span>
-                        ))}
-                    </div>
-                </div>
+
             </section>
 
             {/* About Section */}
